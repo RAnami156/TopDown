@@ -422,4 +422,7 @@ script = ExtResource("1_qnnxm")
 position = Vector2(-1, -1)
 scale = Vector2(2.04167, 2.04167)
 sprite_frames = SubResource("SpriteFrames_818mb")
-animation = &"Idle"
+animation = &"Front_attack"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)

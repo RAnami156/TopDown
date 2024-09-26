@@ -1,7 +1,52 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbca17wegv2jr"]
+[gd_scene load_steps=9 format=3 uid="uid://bbca17wegv2jr"]
 
+[ext_resource type="Texture2D" uid="uid://b3baf7ycbp6yj" path="res://f8e0550ce3b923ea58d12966b07baaaa.jpg" id="1_f0ine"]
 [ext_resource type="PackedScene" uid="uid://rlewdenej2tk" path="res://player.tscn" id="1_rkkva"]
+[ext_resource type="Texture2D" uid="uid://b1nb348w7hwdx" path="res://img/94a809586741179def6a64c8ebc1f3cd.jpg" id="2_b1dvk"]
+[ext_resource type="Texture2D" uid="uid://bnhygrpd7jpy4" path="res://img/download.jpg" id="4_pjjwo"]
+[ext_resource type="Texture2D" uid="uid://cwxdjq4r1qop" path="res://img/images.jpg" id="5_5w7vk"]
+[ext_resource type="Texture2D" uid="uid://bfepb4gyqdmgj" path="res://img/8c211af6ac348ccd5e8ff88e1b85df07.jpg" id="5_aduew"]
+[ext_resource type="Texture2D" uid="uid://dai78il2v873o" path="res://img/3343f2fe8d30e9ebf7bb8d9593700028.jpg" id="6_qe2nn"]
+[ext_resource type="Texture2D" uid="uid://4j74dnpaw26w" path="res://img/cdfb6b10fb079b5e5e359d38d909b524.jpg" id="7_gqgmp"]
 
-[node name="Level" type="Node2D"]
+[node name="Sigma_level" type="Node2D"]
+
+[node name="trava" type="Sprite2D" parent="."]
+position = Vector2(312, 410)
+scale = Vector2(14.6369, 14.6369)
+texture = ExtResource("1_f0ine")
+
+[node name="timoca" type="Sprite2D" parent="."]
+position = Vector2(426, 172)
+scale = Vector2(0.261549, 0.345788)
+texture = ExtResource("2_b1dvk")
+
+[node name="Download" type="Sprite2D" parent="."]
+position = Vector2(758, 466)
+scale = Vector2(0.785714, 0.608844)
+texture = ExtResource("4_pjjwo")
+
+[node name="Images" type="Sprite2D" parent="."]
+position = Vector2(228, 563)
+texture = ExtResource("5_5w7vk")
+
+[node name="8c211Af6Ac348Ccd5e8Ff88e1b85Df07" type="Sprite2D" parent="."]
+position = Vector2(979, 83)
+scale = Vector2(0.554965, 0.554965)
+texture = ExtResource("5_aduew")
+
+[node name="3343f2Fe8d30e9Ebf7Bb8d9593700028" type="Sprite2D" parent="."]
+position = Vector2(-346, 678)
+scale = Vector2(0.254224, 0.254224)
+texture = ExtResource("6_qe2nn")
+
+[node name="Cdfb6b10Fb079b5e5e359d38d909b524" type="Sprite2D" parent="."]
+position = Vector2(-445, 163)
+scale = Vector2(0.588983, 0.588983)
+texture = ExtResource("7_gqgmp")
+
+[node name="F8e0550Ce3b923Ea58d12966b07Baaaa" type="Sprite2D" parent="."]
+position = Vector2(-58, 490)
+texture = ExtResource("1_f0ine")
 
 [node name="Player" parent="." instance=ExtResource("1_rkkva")]

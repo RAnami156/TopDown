@@ -2,9 +2,10 @@ extends CharacterBody2D
 
 const speed = 300
 var current_dir = "none"
+@onready var anim = $CollisionShape2D/AnimatedSprite2D
 
 func _ready() -> void:
-	$CollisionShape2D/AnimatedSprite2D.play("Front_idle")
+	anim.play("Front_idle")
 
 enum {
 	IDLE,
@@ -45,7 +46,6 @@ func player_movement(delta):
 	
 func play_anim(movement):
 	var dir = current_dir
-	var anim = $CollisionShape2D/AnimatedSprite2D
 	
 	if dir == "right":
 		anim.flip_h = false 
@@ -56,21 +56,22 @@ func play_anim(movement):
 			
 	if dir == "left":
 		anim.flip_h = true 
-		if movement == 1 :
+		if movement == MOVING :
 			anim.play("Side_walk")
-		elif movement == 0:
+		elif movement == IDLE:
 			anim.play("Front_idle")
 	
 	if dir == "down":
 		anim.flip_h = true 
-		if movement == 1 :
+		if movement == MOVING :
 			anim.play("Front_walk")
-		elif movement == 0:
+		elif movement == IDLE:
 			anim.play("Idle")
 			
 	if dir == "up":
 		anim.flip_h = true 
-		if movement == 1 :
+		if movement == MOVING :
 			anim.play("Back_walk")
-		elif movement == 0:
+		elif movement == IDLE:
 			anim.play("Back_idle")
+	
