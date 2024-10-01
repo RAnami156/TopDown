@@ -7,32 +7,32 @@
 script = ExtResource("1_1gk7k")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(646, 363.25)
-scale = Vector2(2.40377, 2.16066)
+position = Vector2(968, 538.25)
+scale = Vector2(3.61887, 3.21171)
 texture = ExtResource("2_dbioc")
 
 [node name="sigma" type="Button" parent="."]
-offset_left = 630.0
-offset_top = 146.0
-offset_right = 1169.0
-offset_bottom = 355.0
-theme_override_font_sizes/font_size = 50
-text = "Sigmalevel"
+offset_left = 655.0
+offset_top = 135.0
+offset_right = 1194.0
+offset_bottom = 344.0
+theme_override_font_sizes/font_size = 80
+text = "Sigma level"
 
 [node name="Exit" type="Button" parent="."]
-offset_left = 188.0
-offset_top = 568.0
-offset_right = 440.0
-offset_bottom = 656.0
-theme_override_font_sizes/font_size = 30
+offset_left = 368.0
+offset_top = 819.0
+offset_right = 757.0
+offset_bottom = 986.0
+theme_override_font_sizes/font_size = 80
 text = "EXIT"
 
 [node name="normal" type="Button" parent="."]
-offset_left = 632.0
-offset_top = 431.0
-offset_right = 1176.0
-offset_bottom = 606.0
-theme_override_font_sizes/font_size = 50
+offset_left = 1335.0
+offset_top = 765.0
+offset_right = 1879.0
+offset_bottom = 940.0
+theme_override_font_sizes/font_size = 60
 text = "Normal level"
 
 [connection signal="pressed" from="sigma" to="." method="_on_play_pressed"]

@@ -426,3 +426,13 @@ animation = &"Front_attack"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
+
+[node name="Button" type="Button" parent="."]
+offset_left = -471.0
+offset_top = -262.0
+offset_right = -362.0
+offset_bottom = -206.0
+theme_override_font_sizes/font_size = 20
+text = "Exit"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
