@@ -11,41 +11,43 @@
 
 [node name="Sigma_level" type="Node2D"]
 
-[node name="trava" type="Sprite2D" parent="."]
+[node name="img" type="Node2D" parent="."]
+
+[node name="trava" type="Sprite2D" parent="img"]
 position = Vector2(312, 410)
 scale = Vector2(14.6369, 14.6369)
 texture = ExtResource("1_f0ine")
 
-[node name="timoca" type="Sprite2D" parent="."]
+[node name="timoca" type="Sprite2D" parent="img"]
 position = Vector2(426, 172)
 scale = Vector2(0.261549, 0.345788)
 texture = ExtResource("2_b1dvk")
 
-[node name="Download" type="Sprite2D" parent="."]
+[node name="Download" type="Sprite2D" parent="img"]
 position = Vector2(758, 466)
 scale = Vector2(0.785714, 0.608844)
 texture = ExtResource("4_pjjwo")
 
-[node name="Images" type="Sprite2D" parent="."]
+[node name="Images" type="Sprite2D" parent="img"]
 position = Vector2(228, 563)
 texture = ExtResource("5_5w7vk")
 
-[node name="8c211Af6Ac348Ccd5e8Ff88e1b85Df07" type="Sprite2D" parent="."]
+[node name="8c211Af6Ac348Ccd5e8Ff88e1b85Df07" type="Sprite2D" parent="img"]
 position = Vector2(979, 83)
 scale = Vector2(0.554965, 0.554965)
 texture = ExtResource("5_aduew")
 
-[node name="3343f2Fe8d30e9Ebf7Bb8d9593700028" type="Sprite2D" parent="."]
+[node name="3343f2Fe8d30e9Ebf7Bb8d9593700028" type="Sprite2D" parent="img"]
 position = Vector2(-346, 678)
 scale = Vector2(0.254224, 0.254224)
 texture = ExtResource("6_qe2nn")
 
-[node name="Cdfb6b10Fb079b5e5e359d38d909b524" type="Sprite2D" parent="."]
+[node name="Cdfb6b10Fb079b5e5e359d38d909b524" type="Sprite2D" parent="img"]
 position = Vector2(-445, 163)
 scale = Vector2(0.588983, 0.588983)
 texture = ExtResource("7_gqgmp")
 
-[node name="F8e0550Ce3b923Ea58d12966b07Baaaa" type="Sprite2D" parent="."]
+[node name="F8e0550Ce3b923Ea58d12966b07Baaaa" type="Sprite2D" parent="img"]
 position = Vector2(-58, 490)
 texture = ExtResource("1_f0ine")
 

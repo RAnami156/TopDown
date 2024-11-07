@@ -24,6 +24,7 @@ func player_movement(delta):
 	else :
 		speed = 300
 		
+	
 	if Input.is_action_pressed("ui_right"):
 		current_dir = "right"
 		play_anim(MOVING)
@@ -44,6 +45,7 @@ func player_movement(delta):
 		play_anim(MOVING)
 		velocity.y = -speed
 		velocity.x = 0
+	#idle
 	else:
 		play_anim(IDLE)
 		velocity.x = 0
@@ -86,6 +88,6 @@ func play_anim(movement):
 
 
 func _on_button_pressed() -> void:
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://menu.tscn")
 	
 	print(speed)
