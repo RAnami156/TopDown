@@ -1,7 +1,10 @@
-[gd_scene load_steps=55 format=3 uid="uid://rlewdenej2tk"]
+[gd_scene load_steps=56 format=3 uid="uid://rlewdenej2tk"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_qnnxm"]
 [ext_resource type="Texture2D" uid="uid://dpbq5gmtba11p" path="res://player.png" id="1_rk241"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_hvdkl"]
+radius = 3.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ihngx"]
 atlas = ExtResource("1_rk241")
@@ -414,18 +417,23 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
+y_sort_enabled = true
 script = ExtResource("1_qnnxm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
-position = Vector2(-1, -1)
-scale = Vector2(2.04167, 2.04167)
-sprite_frames = SubResource("SpriteFrames_818mb")
-animation = &"Front_attack"
+position = Vector2(0, 13)
+shape = SubResource("CircleShape2D_hvdkl")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(2, 2)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -1)
+scale = Vector2(1.375, 1.375)
+sprite_frames = SubResource("SpriteFrames_818mb")
+animation = &"Front_attack"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Button" type="Button" parent="."]
 offset_left = -471.0

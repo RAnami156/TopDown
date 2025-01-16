@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var speed = 300
 var current_dir = "none"
-@onready var anim = $CollisionShape2D/AnimatedSprite2D
+@onready var anim = $AnimatedSprite2D
 
 func _ready() -> void:
 	anim.play("Front_idle")
@@ -85,9 +85,10 @@ func play_anim(movement):
 		elif movement == IDLE:
 			anim.play("Back_idle")
 	
-
-
-func _on_button_pressed() -> void:
-	get_tree().change_scene_to_file("res://menu.tscn")
+func attack():
+	if Input.is_action_just_pressed("attack"):
+		velocity.x = 0
+		velocity.y = 0
+		anim.play("Front_attack")
 	
 	print(speed)
