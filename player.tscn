@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://player.gd" id="1_qnnxm"]
 [ext_resource type="Texture2D" uid="uid://dpbq5gmtba11p" path="res://player.png" id="1_rk241"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_hvdkl"]
-radius = 3.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_d06nv"]
+radius = 8.06226
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ihngx"]
 atlas = ExtResource("1_rk241")
@@ -418,29 +418,16 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D"]
 y_sort_enabled = true
+collision_layer = 3
 script = ExtResource("1_qnnxm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 13)
-shape = SubResource("CircleShape2D_hvdkl")
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
+y_sort_enabled = true
+position = Vector2(0, 17)
+shape = SubResource("CircleShape2D_d06nv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, -1)
+position = Vector2(-2.11758e-22, 0.999998)
 scale = Vector2(1.375, 1.375)
 sprite_frames = SubResource("SpriteFrames_818mb")
-animation = &"Front_attack"
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="Button" type="Button" parent="."]
-offset_left = -471.0
-offset_top = -262.0
-offset_right = -362.0
-offset_bottom = -206.0
-theme_override_font_sizes/font_size = 20
-text = "Exit"
-
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+animation = &"Idle"

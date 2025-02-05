@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx83lj435qx08"
-path="res://.godot/imported/TX Tileset Ground.png-09c49e674b4e05fa0e1740174a329964.ctex"
+uid="uid://dquc6hsism1uc"
+path="res://.godot/imported/decor_16x16.png-c2c78e4e53ea380206c3d6f1d8a4c8ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Texture/TX Tileset Ground.png"
-dest_files=["res://.godot/imported/TX Tileset Ground.png-09c49e674b4e05fa0e1740174a329964.ctex"]
+source_file="res://romario-tileMap/decor_16x16.png"
+dest_files=["res://.godot/imported/decor_16x16.png-c2c78e4e53ea380206c3d6f1d8a4c8ea.ctex"]
 
 [params]
 

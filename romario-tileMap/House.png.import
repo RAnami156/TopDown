@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c84p343ip5xi7"
-path="res://.godot/imported/TX Shadow.png-b4789f081d806e377a2b4857d8e63fb7.ctex"
+uid="uid://bsn4cs4p1mnmg"
+path="res://.godot/imported/House.png-4243341afa340a5f418b34a8a3bf4a01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Texture/TX Shadow.png"
-dest_files=["res://.godot/imported/TX Shadow.png-b4789f081d806e377a2b4857d8e63fb7.ctex"]
+source_file="res://romario-tileMap/House.png"
+dest_files=["res://.godot/imported/House.png-4243341afa340a5f418b34a8a3bf4a01.ctex"]
 
 [params]
 

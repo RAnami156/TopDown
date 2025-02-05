@@ -14,6 +14,7 @@ enum {
 
 #main
 func _physics_process(delta):
+	#z_index = int(position.y)
 	player_movement(delta)
 	
 	

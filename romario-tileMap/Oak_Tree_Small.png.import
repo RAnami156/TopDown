@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b12irjvbsds8a"
-path="res://.godot/imported/TX Chest Animation.png-e842fba40aff9e192c293c1575666d34.ctex"
+uid="uid://ca1ockygi5nhl"
+path="res://.godot/imported/Oak_Tree_Small.png-ff5b396b019b300068443c037e866909.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Texture/TX Chest Animation.png"
-dest_files=["res://.godot/imported/TX Chest Animation.png-e842fba40aff9e192c293c1575666d34.ctex"]
+source_file="res://romario-tileMap/Oak_Tree_Small.png"
+dest_files=["res://.godot/imported/Oak_Tree_Small.png-ff5b396b019b300068443c037e866909.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://40m4g3ue1hvs"
-path="res://.godot/imported/TX Village Props.png-111f6fb80172e48598527cc8cc1180bf.ctex"
+uid="uid://d4fi3r2ktvmac"
+path="res://.godot/imported/Outdoor_Decor_Free.png-3b089a5a73f0499a5ca5e03bee079ebd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Texture/TX Village Props.png"
-dest_files=["res://.godot/imported/TX Village Props.png-111f6fb80172e48598527cc8cc1180bf.ctex"]
+source_file="res://romario-tileMap/Outdoor_Decor_Free.png"
+dest_files=["res://.godot/imported/Outdoor_Decor_Free.png-3b089a5a73f0499a5ca5e03bee079ebd.ctex"]
 
 [params]
 
