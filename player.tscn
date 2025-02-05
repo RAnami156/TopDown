@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://rlewdenej2tk"]
+[gd_scene load_steps=57 format=3 uid="uid://rlewdenej2tk"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_qnnxm"]
 [ext_resource type="Texture2D" uid="uid://dpbq5gmtba11p" path="res://player.png" id="1_rk241"]
@@ -416,6 +416,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_nlehv"]
+radius = 16.0
+
 [node name="Player" type="CharacterBody2D"]
 y_sort_enabled = true
 collision_layer = 3
@@ -431,3 +434,19 @@ position = Vector2(-2.11758e-22, 0.999998)
 scale = Vector2(1.375, 1.375)
 sprite_frames = SubResource("SpriteFrames_818mb")
 animation = &"Idle"
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(1, 14)
+shape = SubResource("CircleShape2D_nlehv")
+
+[node name="attack_cooldown" type="Timer" parent="."]
+
+[node name="deal_attack" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="body_entered" from="Hitbox" to="." method="_on_hitbox_body_entered"]
+[connection signal="body_exited" from="Hitbox" to="." method="_on_hitbox_body_exited"]
+[connection signal="timeout" from="attack_cooldown" to="." method="_on_attack_cooldown_timeout"]
+[connection signal="timeout" from="deal_attack" to="." method="_on_deal_attack_timeout"]
